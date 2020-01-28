@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -12,8 +13,15 @@ class _HomeState extends State<Home> {
         title: Text("Exam"),
         centerTitle: true,
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.search), onPressed: (){})
+          IconButton(icon: Icon(Icons.search), onPressed: () {}),
+          IconButton(
+            icon: Icon(Icons.person),
+            onPressed: () {},
+          )
         ],
+      ),
+      body: Container(
+        child: ListView(),
       ),
     );
   }

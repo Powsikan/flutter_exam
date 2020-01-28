@@ -10,7 +10,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Exam"),
+        title: Text("Call"),
         centerTitle: true,
         actions: <Widget>[
           IconButton(icon: Icon(Icons.search), onPressed: () {}),
@@ -23,6 +23,13 @@ class _HomeState extends State<Home> {
       body: Container(
         child: ListView(),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.call_made),title:Text("Make Call")),
+        BottomNavigationBarItem(icon: Icon(Icons.call_end),title:Text("End Call")),
+        BottomNavigationBarItem(icon: Icon(Icons.call_missed),title:Text("Missed Call")),
+
+
+      ]),
     );
   }
 }
